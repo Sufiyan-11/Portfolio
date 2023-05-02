@@ -4,5 +4,5 @@ var typed = new Typed('.type_text', {
     loop: true,
     backSpeed: 70,
     smartBackspace: false,
-    strings: [' Programmer', 'Web Developer','Web Designer'],
+    strings: ['Web Developer.','Programmer.','Web Designer.'],
   });
