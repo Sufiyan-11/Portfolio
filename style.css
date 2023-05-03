@@ -123,4 +123,23 @@ body{
   top: 2180px;
   left: 113px;
  }
-  
+.cbg{
+  background-color: #00b4d8;
+}
+.port-title h2::before{
+  content: '';
+  height: 5px;
+  width: 65px;
+  background-color: #03045e;
+  position: absolute;
+  top: 2714px;
+}
+.port-title h2::after{
+  content: '';
+  height: 5px;
+  width: 32px;
+  background-color: #03045e;
+  position: absolute;
+  top: 2724px;
+  left: 113px;
+}
