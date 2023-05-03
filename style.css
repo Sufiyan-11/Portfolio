@@ -8,6 +8,7 @@ body{
 }
 .bcolor{
     background-color: #00b4d8;
+    border-bottom: 2px solid #03045e;
 }
 .nav-link{
     color: white;
@@ -84,5 +85,42 @@ body{
     width: 100%;
     background-color: gray;
     position: absolute;
+    opacity: 0.2;
+ }
+ .bclr{
+  background-color: #00b4d8;
+  border: 5px solid #03045e;
+ }
+ .fnt{
+  font-size: 20px;
+ }
+ .abtn{
+  background-color: #03045e;
+ }
+ .cv{
+  background-color: #00b4d8;
+  height: 50px;
+  width: 30%;
+  font-size: 20px;
+ }
+ .cv:hover{
+  background-color: #03045e;
+ }
+ .skill-title h2::before{
+  content: '';
+  height: 5px;
+  width: 58px;
+  background-color: #03045e;
+  position: absolute;
+  top: 2171px;
+ }
+ .skill-title h2::after{
+  content: '';
+  height: 5px;
+  width: 32px;
+  background-color: #03045e;
+  position: absolute;
+  top: 2180px;
+  left: 113px;
  }
   
