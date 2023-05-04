@@ -176,4 +176,50 @@ body{
   right: 12px;
   display: none;
   border-radius:50%;
+  z-index: 1;
+}
+@media only screen and (max-width:600px){
+  .m-size{
+    width: 100%;
+  }
+  .mobile-css{
+    margin-top: 27px;
+    margin-left: 0;
+  }
+  .mob-button{
+    height: 50px;
+    width: 150px;
+  }
+  .about-title h2::before{
+    top: 1084px;
+  }
+  .about-title h2::after{
+    top: 1095px;
+    left: 13px;
+  }
+  .skill-title h2::before{
+    top: 3948px;
+  }
+  .skill-title h2::after{
+    top: 3958px;
+    left: 13px;
+  }
+  .port-title h2::before{
+    top: 4743px;
+  }
+  .port-title h2::after{
+    top: 4752px;
+    left: 13px;
+  }
+  .con-title h2::before{
+    top: 7096px;
+  }
+  .con-title h2::after{
+    top:7106px;
+    left: 13px;
+  }
+  .mob-mg{
+    margin-bottom: 22px;
+  }
+
 }
