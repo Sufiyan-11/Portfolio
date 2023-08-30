@@ -156,7 +156,7 @@ body{
   width: 58px;
   background-color: #03045e;
   position: absolute;
-  top: 4448px;
+  top: 4468px;
  }
  .con-title h2::after{
   content: '';
@@ -164,7 +164,7 @@ body{
   width: 32px;
   background-color: #03045e;
   position: absolute;
-  top: 4458px;
+  top: 4478px;
   left: 113px;
  }
  .icon{
