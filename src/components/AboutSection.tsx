@@ -190,7 +190,7 @@ export default function AboutSection() {
                 transition={{ duration: 1, delay: 0.3 }}
                 viewport={{ once: true }}
               >
-                Hi! I'm <motion.span 
+                Hi! I&apos;m <motion.span 
                   className="text-transparent bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text font-bold text-2xl md:text-3xl"
                   whileHover={{ scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 300 }}
@@ -485,7 +485,7 @@ export default function AboutSection() {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <Users className="w-5 h-5 text-cyan-400" />
-            <span className="text-gray-200 font-medium">Let's collaborate and build something amazing together!</span>
+            <span className="text-gray-200 font-medium">Let&apos;s collaborate and build something amazing together!</span>
           </motion.div>
         </motion.div>
       </div>
