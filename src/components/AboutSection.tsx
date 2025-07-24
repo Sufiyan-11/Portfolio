@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { GraduationCap, Briefcase, ExternalLink, Calendar, MapPin, FileText, Award, Code, Users } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const education = [
   {
@@ -97,35 +98,40 @@ const itemVariants = {
 };
 
 export default function AboutSection() {
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => setIsClient(true), []);
+
   return (
     <section id="about" className="relative py-32 bg-gradient-to-br from-slate-950 via-gray-900 to-slate-950 overflow-hidden">
       {/* Enhanced Background Elements */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cyan-400/20 via-transparent to-transparent"></div>
       
       {/* Animated Particles */}
-      <div className="absolute inset-0 overflow-hidden">
-        {[...Array(30)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-cyan-400/30 rounded-full"
-            initial={{ 
-              x: Math.random() * window.innerWidth, 
-              y: Math.random() * window.innerHeight,
-              opacity: 0 
-            }}
-            animate={{ 
-              y: [null, -20, 20, -20],
-              opacity: [0, 1, 0.5, 1, 0],
-              scale: [0.5, 1.2, 0.8, 1]
-            }}
-            transition={{ 
-              duration: 4 + Math.random() * 4,
-              repeat: Infinity,
-              delay: Math.random() * 2
-            }}
-          />
-        ))}
-      </div>
+      {isClient && (
+        <div className="absolute inset-0 overflow-hidden">
+          {[...Array(30)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute w-1 h-1 bg-cyan-400/30 rounded-full"
+              initial={{ 
+                x: Math.random() * window.innerWidth, 
+                y: Math.random() * window.innerHeight,
+                opacity: 0 
+              }}
+              animate={{ 
+                y: [null, -20, 20, -20],
+                opacity: [0, 1, 0.5, 1, 0],
+                scale: [0.5, 1.2, 0.8, 1]
+              }}
+              transition={{ 
+                duration: 4 + Math.random() * 4,
+                repeat: Infinity,
+                delay: Math.random() * 2
+              }}
+            />
+          ))}
+        </div>
+      )}
 
       {/* Enhanced SVG Blob Background */}
       <motion.div
