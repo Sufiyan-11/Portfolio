@@ -25,6 +25,7 @@ export default function HomeSection() {
       if (!isDeleting) {
         current = role.slice(0, j + 1);
         j++;
+        if (typeRef.current) typeRef.current.textContent = current;
         if (j === role.length) {
           isDeleting = true;
           timeout = setTimeout(type, 1200);
@@ -33,6 +34,7 @@ export default function HomeSection() {
       } else {
         current = role.slice(0, j - 1);
         j--;
+        if (typeRef.current) typeRef.current.textContent = current;
         if (j === 0) {
           isDeleting = false;
           i++;
