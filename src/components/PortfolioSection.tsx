@@ -40,6 +40,17 @@ const clientProjects = [
     featured: true
   },
    {
+    title: "Kaf InfoTech",
+    description: "KAF Infotech is a Mumbai-based technology firm committed to providing innovative digital solutions and fostering education through modern and effective learning platforms.",
+    image: "/kaf-home.png",
+    live: "https://kafinfotech.com/",
+    tech: ["Next.js","React.js", "Firebase"],
+    category: "Real Estate",
+    client: "PropertyPro Ltd",
+    status: "Live",
+    featured: true
+  },
+   {
     title: "MLH Trust",
     description: "The Malik Liyaqat Husain (MLH) Education and Charitable Trust is dedicated to empowering underprivileged individuals through education, healthcare, and skill development. Established in 2010, the trust provides financial assistance for professional courses, skill-based training for dropout students, and support for medical and marriage expenses. MLH Trust aims to uplift communities and promote sustainable development, focusing on access to education and essential services.",
     image: "/mlh-home.png",
